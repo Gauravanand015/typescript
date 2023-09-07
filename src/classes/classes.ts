@@ -345,21 +345,21 @@
 
 // this singleton private constructor is used to create a new instance within the class we cannot create the new instance outside the class using new keyword because of the private keyword, we have to create instance inside the class itself and can be created only one time throughout the lifecycle
 
-class Department {
-  private static instance: Department;
-  id: string;
+// class Department {
+//   private static instance: Department;
+//   id: string;
 
-  private constructor(id: string) {
-    this.id = id;
-  }
+//   private constructor(id: string) {
+//     this.id = id;
+//   }
 
-  static getInstance(id:string){
-    if(Department.instance){
-      return Department.instance;
-    }
-    return this.instance = new Department(id);
-  }
-}
+//   static getInstance(id:string){
+//     if(Department.instance){
+//       return Department.instance;
+//     }
+//     return this.instance = new Department(id);
+//   }
+// }
 
-console.log(Department.getInstance("id7")); 
-console.log(Department.getInstance("id1")); // this will return same output
+// console.log(Department.getInstance("id7")); 
+// console.log(Department.getInstance("id1")); // this will return same output
