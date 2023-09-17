@@ -19,7 +19,7 @@
 //   name:string;
 //   age:number;
 //   hobbies:string[];
-//   role:[number,string]  // this is tuple with the data type and with the length 2 but their is an exception we push the element in role but cannot assign it,we assign the value in place of number their should be number and in place of string their should be string  see the example below //
+//   role:[number,string]  // this is tuple with the data types and with the length which is 2(length of the array role) here but their is an exception we push the element in role but cannot assign it,we assign the value in place of number their should be number and in place of string their should be string  see the example below //
 // } = {
 //   name: "Gaurav",
 //   age: 27,
@@ -213,11 +213,11 @@
 
   // => if we want to run the specific file continuously then we have to do tsc app.ts --watch or tsc app.ts -w
   
-  // => if we want to the whole project first we have to do "tsc --init" then "tsc" these commands will the execute the project and wait for the change if it detect and change the it automatically run the project again 
+  // => if we want to run the whole project first we have to do "tsc --init" then "tsc -w" these commands will the execute the project and wait for the change if it detect and change the it automatically run the project again 
 
   // And we can also do "tsc -w" this look all the tsc file and see the changes if any then it will automatically run the project
 
-  // in typescripts we have include,exclude and files option for tsconfig.json in which we can exclude the file  and the subfolder for example "*.dev.ts" this will exclude all the files which has "dev.ts" at the end and like this we can also exclude the folder and subfolder
+  // in typescripts we have include,exclude files option for tsconfig.json in which we can exclude the file  and the subfolder for example "*.dev.ts" this will exclude all the files which has "dev.ts" at the end and like this we can also exclude the folder and subfolder
 
   // now we have "include" options also it is same as "exclude" in this option we can include the file and subfolder which we want to run at any cost.
 
